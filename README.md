@@ -1,33 +1,35 @@
 # hubot-spotify-me
 
-A hubot script that interacts with the Spotify Web API, perfect to use during fridays in the office
+A hubot script that interacts with the TimeZoneDB API, perfect to use when you're figuring out if your co-workers in another timezone are working.
 
-See [`src/spotify-me.coffee`](src/spotify-me.coffee) for full documentation.
+See [`src/current-time.coffee`](src/current-time.coffee) for full documentation.
 
-Published at [`npmjs`](https://www.npmjs.com/package/hubot-spotify-me)
+Published at [`npmjs`](https://www.npmjs.com/package/hubot-current-time)
 
 ## Installation
 
 In hubot project repo, run:
 
-`npm install hubot-spotify-me --save`
+`npm install hubot-current-time --save`
 
-Then add **hubot-spotify-me** to your `external-scripts.json`:
+Then add **hubot-current-time** to your `external-scripts.json`:
 
 ```json
 [
-  "hubot-spotify-me"
+  "hubot-current-time"
 ]
+```
+Setup the HUBOT_CURRENT_TIME_KEY environmental variable
+```
+export HUBOT_CURRENT_TIME_KEY=<YOUR API KEY>
 ```
 
 ## Sample Interaction
-Using ```hubot spotify me <something>``` will result in a search for a track called <something>
-
-Using ```hubot spotify me roulette``` will result in a search for a track using a random word collected from randomword.setgetgo.com
+Using ```hubot current time in <timezone>``` will give you the current date & time in the timezone specified
 
 ```
-Hubot> hubot spotify me test
-Hubot> https://open.spotify.com/track/0yA1MBQ60SoiYt7xqdS3H1
-Hubot> hubot spotify me roulette
-Hubot> Even I can't find that crappy song called "poststernal"! I guess that's for the best.
+Hubot> hubot current time in America/Toronto
+Hubot> Current time in America/Toronto is: Sat Apr 04 2015 12:07:49 GMT+0200 (CEST)
+Hubot> hubot current time in America/Sao_Paulo
+Hubot> Current time in America/Sao_Paulo is: Sat Apr 04 2015 13:08:47 GMT+0200 (CEST)
 ```
