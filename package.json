@@ -1,0 +1,30 @@
+{
+  "name": "hubot-current-time",
+  "description": "Hubot giving the current time in a specified timezone",
+  "version": "1.0.0",
+  "author": "Fredrik Jönsson <fjnsson@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/freddd/hubot-current-time.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freddd/hubot-current-time/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.9"
+  },
+  "devDependencies": {},
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
+  },
+  "homepage": "https://github.com/freddd/hubot-current-time",
+  "directories": {
+    "test": "test"
+  }
+}
