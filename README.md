@@ -1,4 +1,4 @@
-# hubot-spotify-me
+# hubot-current-time
 
 A hubot script that interacts with the TimeZoneDB API, perfect to use when you're figuring out if your co-workers in another timezone are working.
 
